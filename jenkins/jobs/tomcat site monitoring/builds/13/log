@@ -1,0 +1,7 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/tomcat site monitoring
+[tomcat site monitoring] $ /bin/bash /tmp/jenkins3114616834060602237.sh
+Website is up and returns status code 200.
+Condition: 'build result equal FAILURE' not met. Triggering skipped.
+Finished: SUCCESS

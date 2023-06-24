@@ -1,0 +1,8 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/tomcat site monitoring
+[tomcat site monitoring] $ /bin/bash /tmp/jenkins15482247576859938581.sh
+Website is either down or returns a different status code: 404
+Build step 'Execute shell' marked build as failure
+Triggering a new build of [8mha:////4MpCBALjbfm2TDm+81RAu/18ZWPeFcOIuhsCoETFE5fUAAAAsR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz5EgZd/az8JP2k0sycFFUjg8SCAhCZB2KnZ5ZklCYBGbn5eZkl+SDj9QExy1wr4gAAAA==[0mbuild app and github monitoring
+Finished: FAILURE

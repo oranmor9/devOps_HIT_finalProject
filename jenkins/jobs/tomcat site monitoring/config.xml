@@ -1,0 +1,52 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>Check if tomcat Date.jsp site is up</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <hudson.triggers.TimerTrigger>
+      <spec>* * * * *</spec>
+    </hudson.triggers.TimerTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash
+
+URL=&quot;http://tomcat:8080/Date.jsp&quot;
+EXPECTED_STATUS=&quot;200&quot;
+
+response=$(curl -s -o /dev/null -w &quot;%{http_code}&quot; $URL)
+
+if [ &quot;$response&quot; == &quot;$EXPECTED_STATUS&quot; ]; then
+  echo &quot;Website is up and returns status code $EXPECTED_STATUS.&quot;
+else
+  echo &quot;Website is either down or returns a different status code: $response&quot;
+  exit 1
+fi
+</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.plugins.downstream__ext.DownstreamTrigger plugin="downstream-ext@73.vdda_16e6eb_0da">
+      <childProjects>build app and github monitoring</childProjects>
+      <threshold>
+        <name>FAILURE</name>
+        <ordinal>2</ordinal>
+        <color>RED</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+      <thresholdStrategy>EXACT</thresholdStrategy>
+      <onlyIfSCMChanges>false</onlyIfSCMChanges>
+      <onlyIfLocalSCMChanges>false</onlyIfLocalSCMChanges>
+    </hudson.plugins.downstream__ext.DownstreamTrigger>
+  </publishers>
+  <buildWrappers/>
+</project>

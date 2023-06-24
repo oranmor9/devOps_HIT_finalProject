@@ -1,0 +1,21 @@
+Started by user [8mha:////4GgVYAvQ3nuECjYDpDL8ma5M+5jxE/W+GSNMkNVkqMDsAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/tomcat site monitoring
+[tomcat site monitoring] $ /bin/sh -xe /tmp/jenkins17097416683516707356.sh
++ curl http://tomcat:8080/Date.jsp
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   311  100   311    0     0    845      0 --:--:-- --:--:-- --:--:--   842100   311  100   311    0     0    845      0 --:--:-- --:--:-- --:--:--   842
+
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>test current Date</title>
+</head>
+<body>
+Today's date: Jun 24, 2023, 3:18:51 PM
+</body>
+</html>
+Finished: SUCCESS

@@ -1,0 +1,26 @@
+Started by an SCM change
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ex_test
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/ex_test/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/oranmor9/jenkinsEx2.git # timeout=10
+Fetching upstream changes from https://github.com/oranmor9/jenkinsEx2.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/oranmor9/jenkinsEx2.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 7c178ce30c860e50c4fdc0b7021804de44ab570f (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 7c178ce30c860e50c4fdc0b7021804de44ab570f # timeout=10
+Commit message: "Update Date.jsp"
+ > git rev-list --no-walk 0c97096d453c80e322ce38c23a4c86a694cf2549 # timeout=10
+[ex_test] $ /bin/sh -xe /tmp/jenkins11499893624828345514.sh
++ cp -r Date.jsp /home/webapps/ROOT
+HttpMethod: GET
+URL: http://tomcat:8080/Date.jsp
+Sending request to url: http://tomcat:8080/Date.jsp
+Response Code: HTTP/1.1 200 
+Success: Status code 200 is in the accepted range: 100:399
+Finished: SUCCESS

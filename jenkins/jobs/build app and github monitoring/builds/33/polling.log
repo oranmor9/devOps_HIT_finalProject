@@ -1,0 +1,12 @@
+Started on Jun 18, 2023, 7:25:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision 874e77a262dbf790ad3285a4b9b710dce3904641 (refs/remotes/origin/main)
+The recommended git tool is: NONE
+No credentials specified
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git ls-remote -h -- https://github.com/oranmor9/jenkinsEx2.git # timeout=10
+Found 1 remote heads on https://github.com/oranmor9/jenkinsEx2.git
+[poll] Latest remote head revision on refs/heads/main is: a63146bb99b444a6d1c20bd416183f3decbc6fee
+Done. Took 0.55 sec
+Changes found

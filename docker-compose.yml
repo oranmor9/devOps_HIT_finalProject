@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  jenkins:
+    container_name: jenkins
+    image: jenkins/jenkins:lts-jdk11
+    restart: on-failure
+    ports:
+      - 8080:8080
+      - 50000:50000
+    volumes:
+      - ./jenkins:/var/jenkins_home
+      - ./tomcat:/home/webapps
+
+  tomcat:
+    container_name: tomcat
+    image: tomcat:9.0
+    ports:
+      - 8082:8080
+    volumes:
+      - ./tomcat:/usr/local/tomcat/webapps

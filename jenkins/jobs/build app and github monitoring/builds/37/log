@@ -1,0 +1,31 @@
+Started by upstream project "[8mha:////4Pp11PHBorRwQNXCAUlu8Vi+v7YthYQwD6vuNbahBzA6AAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyxEgYF/az8JP2S/NzkxBJVI4PizJJUIJWbn5dZkg8yUR8AI9TB69UAAAA=[0mtomcat site monitoring" build number [8mha:////4PKkxAOIMIwmSRyKpxSf1OytBBBmZLC+nBSoYSeXxHerAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBkX9rPwk/ZL83OTEElUjg+LMklQglZufl1mSDzJR3wIA4YMAKtYAAAA=[0m8
+originally caused by:
+ Started by user [8mha:////4GgVYAvQ3nuECjYDpDL8ma5M+5jxE/W+GSNMkNVkqMDsAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/build app and github monitoring
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/oranmor9/jenkinsEx2.git
+ > git init /var/jenkins_home/workspace/build app and github monitoring # timeout=10
+Fetching upstream changes from https://github.com/oranmor9/jenkinsEx2.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/oranmor9/jenkinsEx2.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/oranmor9/jenkinsEx2.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 9d64bba090d53eea5b397eab631dc3cdb6581481 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9d64bba090d53eea5b397eab631dc3cdb6581481 # timeout=10
+Commit message: "Update Date.jsp"
+ > git rev-list --no-walk 9d64bba090d53eea5b397eab631dc3cdb6581481 # timeout=10
+[build app and github monitoring] $ /bin/sh -xe /tmp/jenkins2427617019443514549.sh
++ cp -r Date.jsp /home/webapps/ROOT
+HttpMethod: GET
+URL: http://tomcat:8080/Date.jsp
+Sending request to url: http://tomcat:8080/Date.jsp
+Response Code: HTTP/1.1 200 
+Success: Status code 200 is in the accepted range: 100:399
+Finished: SUCCESS

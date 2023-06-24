@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='downstream-ext' version='73.vdda_16e6eb_0da'><l:dependency name='Downstream-Ext' groupId='org.jenkins-ci.plugins' artifactId='downstream-ext' version='73.vdda_16e6eb_0da' url='https://wiki.jenkins-ci.org/display/JENKINS/Downstream-Ext+Plugin'><l:description>The Jenkins Plugins Parent POM Project</l:description><l:license name='MIT license' url=''/></l:dependency></l:dependencies>
